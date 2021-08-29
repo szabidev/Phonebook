@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  background-color: #fdc500;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+#inputMessage {
+  height: 30px;
+  visibility: hidden;
+}
+.message,
+.error-message {
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  visibility: visible;
+}
+
+.message {
+  background-color: #0ead69;
+  color: #00296b;
+}
+
+.error-message {
+  background-color: #d80032;
+  color: #fdc500;
+}
+
+.form {
+  width: 100%;
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+.form label {
+  font-size: 25px;
+  font-weight: 300;
+  /* position them nicely next to the inputs */
+  vertical-align: middle;
+}
+
+label[for="number"] {
+  margin-left: 60px;
+}
+
+#name {
+  margin-right: 60px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#number {
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#name:focus,
+#number:focus {
+  outline: none;
+}
+
+.btn {
+  width: 30%;
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  outline: none;
+  display: block;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00509d;
+  color: #fdc500;
+  outline: none;
+  transition: all 0.2s;
+  transform: translateY(-3px);
+}
+
+.btn:hover:active {
+  transform: translateY(3px);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s;
+}
+
+.book-table {
+  width: 1000px;
+  background-color: #fdc500;
+  margin: 50px auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  /* table-layout: fixed; */
+}
+
+.book-table th {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #00296b;
+}
+
+.book-table td {
+  padding-bottom: 5px;
+  color: #2b2d42;
+}
+
+.book-table td:nth-child(1),
+.book-table td:nth-child(2) {
+  border-bottom: 1px solid #8d99ae;
+}
+
+td:nth-child(1) {
+  width: 40%;
+}
+td:nth-child(2) {
+  width: 30%;
+}
+td:nth-child(3) {
+  width: 15%;
+}
+
+/* Class will be added dynamically  */
+.edit-btn,
+.delete-btn {
+  /* display block so that i can apply margin to the bottom and center it */
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.edit-btn {
+  background-color: #00509d;
+  color: #fdc500;
+}
+
+.delete-btn {
+  background-color: #a41623;
+  color: #fdc500;
+}
