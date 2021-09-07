@@ -31,7 +31,9 @@ body {
   visibility: hidden;
 }
 .message,
-.error-message {
+.error-message,
+.edited,
+.deleted {
   width: 500px;
   border-radius: 5px;
   text-align: center;
@@ -41,12 +43,14 @@ body {
   visibility: visible;
 }
 
-.message {
+.message,
+.edited {
   background-color: #0ead69;
   color: #00296b;
 }
 
-.error-message {
+.error-message,
+.deleted {
   background-color: #d80032;
   color: #fdc500;
 }
